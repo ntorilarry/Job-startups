@@ -36,7 +36,7 @@ const Navbar = () => {
                   className="border-transparent text-white hover:border-white hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   href="/#services"
                 >
-                  Jobs
+                  Career Tips
                 </a>
               </li>
               <li>
@@ -45,7 +45,7 @@ const Navbar = () => {
                   className="border-transparent text-white hover:border-white hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   href="/#testimonials"
                 >
-                  Career Tips
+                  Jobs
                 </a>
               </li>
             </ul>
@@ -77,13 +77,13 @@ const Navbar = () => {
               <li>
                 {" "}
                 <a className="text-lg" href="/#services">
-                  Jobs
+                Career Tips
                 </a>
               </li>
               <li>
                 {" "}
                 <a className="text-lg" href="/#testimonials">
-                  Career Tips
+                 Jobs
                 </a>
               </li>
             </ul>
