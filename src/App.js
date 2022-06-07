@@ -1,5 +1,6 @@
 import "./App.css";
 import CareerTips from "./components/careerTips";
+import Footer from "./components/footer";
 import Home from "./components/home";
 import Jobs from "./components/jobs";
 import Partners from "./components/partners";
@@ -15,6 +16,7 @@ function App() {
       <Partners />
       <Test />
       <Testimonials/>
+      <Footer/>
     </div>
   );
 }

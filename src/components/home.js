@@ -1,15 +1,13 @@
 import React from "react";
-import HeadImg from "../assets/illustrasi.png";
+
 import Navbar from "./navbar";
 import "../styles/home.css";
-import Vector from "../assets/Vector.png";
 
 function Home() {
   return (
     <div>
       <div
         className="w-full h-[100vh] top-[90px] bg-no-repeat bg-right-top bg-contain"
-      
         id="backg"
       >
         <Navbar />
