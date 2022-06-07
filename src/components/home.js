@@ -1,149 +1,76 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Background from "../assets/bg1.jpg";
-import Spaceship from "../assets/spaceship.png";
+import React from "react";
+import HeadImg from "../assets/illustrasi.png";
+import Navbar from "./navbar";
 import "../styles/home.css";
-import "../styles/startup.scss";
-import { Carousel } from "react-carousel-minimal";
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
+import Vector from "../assets/Vector.png";
 
 function Home() {
   return (
-    <div
-      className="relative bg-gray-50 overflow-hidden bg-no-repeat bg-center bg-cover w-full h-[100vh]"
-      style={{ backgroundImage: `url(${Background})` }}
-    >
+    <div>
       <div
-        className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
-        aria-hidden="true"
-      ></div>
+        className="w-full h-[100vh] top-[90px] bg-no-repeat bg-right-top bg-contain"
+      
+        id="backg"
+      >
+        <Navbar />
 
-      <div className="relative pt-6 pb-16 sm:pb-24">
-        <Popover>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <nav
-              className="relative flex items-center justify-between sm:h-10 md:justify-center"
-              aria-label="Global"
-            >
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
-                    />
-                  </a>
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                      <span className="sr-only">Open main menu</span>
-                      <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                    </Popover.Button>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden md:flex md:space-x-10">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="font-light  text-white hover:text-gray-900"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-                <span className="inline-flex rounded-md shadow">
-                  <a
-                    href="#"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </span>
-              </div>
-            </nav>
-          </div>
-
-          <Transition
-            as={Fragment}
-            enter="duration-150 ease-out"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="duration-100 ease-in"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          >
-            <Popover.Panel
-              focus
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            >
-              <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div className="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 ">
-                      <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
-                    </Popover.Button>
-                  </div>
-                </div>
-                <div className="px-2 pt-2 pb-3 ">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 "
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-                <a
-                  href="#"
-                  className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 "
+        <div className="w-full h-[70%] flex flex-col justify-center items-start text-black px-56 text-left hero ">
+          <div>
+            <h1 className="font-semibold text-5xl home-title">
+              Find your job better and faster
+            </h1>
+            <p className="text-base font-light py-4 text-gray-500 hero-subtitle">
+              Find your best job better and faster with Jobest
+            </p>
+            {/* <form action="#" method="POST" className="mt-3 sm:flex drop-shadow-xl">
+              <label htmlFor="email" className="sr-only">
+                Search
+              </label>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300 pl-5"
+                placeholder="Search for jobs"
+              />
+              <button
+                type="submit"
+                className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+              >
+                Search
+              </button>
+            </form> */}
+            <div class="pt-2 absolute mx-auto text-gray-600 drop-shadow-2xl">
+              <input
+                class=" bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                type="search"
+                name="search"
+                placeholder="Search"
+              />
+              <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                <svg
+                  class="text-gray-600 h-4 w-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 56.966 56.966"
+                  style={{ enableBackground: "new 0 0 56.966 56.966;" }}
+                  xmlSpace="preserve"
+                  width="512px"
+                  height="512px"
                 >
-                  Log in
-                </a>
-              </div>
-            </Popover.Panel>
-          </Transition>
-        </Popover>
-
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 w-full h-[90vh] top-[90px]">
-          <div className="w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center">
-            {/* <h1 className="z-10  text-5xl hero1">Startups</h1> */}
-            <div class="z-10 text-2xl hero1 wrapper">
-              <p>S</p>
-              <p>T</p>
-              <p>A</p>
-              <p>R</p>
-              <p>T</p>
-              <p>U</p>
-              <p>p</p>
-              <p>S</p>
+                  <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                </svg>
+              </button>
             </div>
-            <img className=" mb-64 object" src={Spaceship} alt="" />
           </div>
-        </main>
+        </div>
       </div>
     </div>
   );
 }
+
 export default Home;

@@ -1,37 +1,45 @@
-.object {
-    width: 14rem;
-    animation: MoveUpDown 6s linear infinite;
-    position: absolute;
-    transition: transform .2s;
-    -webkit-animation: MoveUpDown 6s linear infinite;
+.home-title {
+    max-width: 16ch;
+    color: #112d58;
+    line-height: 1.2;
 }
 
-@keyframes MoveUpDown {
-    0%, 100% {
-        bottom: 0;
-    }
-
-    50% {
-        bottom: 100px;
-    }
+.bg-random {
+    background-image: url(https://source.unsplash.com/1980x1080/?barbershop);
+    /* animation: scale 40s linear infinite; */
 }
 
-.object:hover {
-    transform: scale(1.3);
-    /*(150%zoom-Note: if the zoom is too large, it will go outside of the viewport) */
-    ;
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
+
+
+.hero-subtitle {
+    max-width: 50ch;
 }
 
-.hero1 {
-    margin-bottom: 33rem;
+
+#backg {
+    background-image: url('../assets/illustrasi.png'), url('../assets//Vector.png');
+    background-position: top right, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, 8%;
 }
 
 @media (max-width: 600px) {
-    .object {
-        width: 12rem;
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
+
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .bg-random {
+        animation: none;
+        -webkit-animation: none;
+    }
+
 }

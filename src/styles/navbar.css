@@ -1,0 +1,18 @@
+.navNEW {
+    padding-left: 14rem;
+    padding-right: 14rem
+}
+.logoo{
+    width: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navNEW {
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+
+    .logoo {
+        width: 70px;
+    }
+}
