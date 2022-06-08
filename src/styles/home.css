@@ -4,10 +4,6 @@
     line-height: 1.2;
 }
 
-.bg-random {
-    background-image: url(https://source.unsplash.com/1980x1080/?barbershop);
-    /* animation: scale 40s linear infinite; */
-}
 
 
 
@@ -37,9 +33,12 @@
         font-size: 0.9rem;
     }
 
-    .bg-random {
-        animation: none;
-        -webkit-animation: none;
-    }
+}
 
+@media (max-width: 1200px) {
+    #backg {
+        background-image: url('../assets/bgg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
