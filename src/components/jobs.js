@@ -1,13 +1,13 @@
 import React from "react";
 import Shape from "../assets/Shape.png";
+import "../styles/jobs.css"
 
 function Jobs() {
   return (
     <div>
       <div
         id="services"
-        class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white bg-right-top bg-no-repeat "
-        style={{ backgroundImage: `url(${Shape})` }}
+        class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white mx-auto jobbg"
       >
         <div class="container xl:max-w-6xl mx-auto px-4">
           <header class="text-center mx-auto mb-12 lg:px-20">
@@ -20,7 +20,7 @@ function Jobs() {
             </p>
           </header>
 
-          <div class="flex flex-wrap flex-row -mx-4 text-center">
+          <div class="flex flex-wrap flex-row -mx-4 text-center m-auto jobs">
             <div
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"

@@ -1,0 +1,10 @@
+.jobbg{
+    background-image: url('../assets/Shape.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+}
+
+.jobs{
+    margin: auto;
+}
