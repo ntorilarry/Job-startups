@@ -1,6 +1,6 @@
 import React from "react";
 import Shape from "../assets/Shape.png";
-import "../styles/jobs.css"
+import "../styles/jobs.css";
 
 function Jobs() {
   return (
@@ -22,6 +22,11 @@ function Jobs() {
 
           <div class="flex flex-wrap flex-row  text-center m-auto jobs">
             <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="50"
+              data-aos-once="true"
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"
               style={{
@@ -60,7 +65,14 @@ function Jobs() {
                 animationname: "fadeInUp",
               }}
             >
-              <div class="py-8 px-12 mb-12  transform transition duration-300 ease-in-out hover:-translate-y-2 h-72 w-64 rounded-2xl bg-white drop-shadow-[0_35px_35px_#e2e7f7] ">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+                data-aos-once="true"
+                class="py-8 px-12 mb-12  transform transition duration-300 ease-in-out hover:-translate-y-2 h-72 w-64 rounded-2xl bg-white drop-shadow-[0_35px_35px_#e2e7f7] "
+              >
                 <div class="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +96,11 @@ function Jobs() {
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="150"
+              data-aos-once="true"
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".3s"

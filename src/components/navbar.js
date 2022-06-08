@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className=" mx-auto px-4 flex justify-between items-center h-full navNEW">
           <div>
             <a href="/">
-              <img className="logoo" src={Logo} alt=""  />
+              <img className="logoo" src={Logo} alt="" />
             </a>
           </div>
           <div className="hidden md:flex">
@@ -77,13 +77,13 @@ const Navbar = () => {
               <li>
                 {" "}
                 <a className="text-lg" href="/#services">
-                Career Tips
+                  Career Tips
                 </a>
               </li>
               <li>
                 {" "}
                 <a className="text-lg" href="/#testimonials">
-                 Jobs
+                  Jobs
                 </a>
               </li>
             </ul>
