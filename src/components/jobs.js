@@ -9,7 +9,7 @@ function Jobs() {
         id="services"
         class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white mx-auto jobbg"
       >
-        <div class="container xl:max-w-6xl mx-auto px-4">
+        <div class="container xl:max-w-6xl mx-auto px-8">
           <header class="text-center mx-auto mb-12 lg:px-20">
             <h2 class="text-4xl leading-normal  font-semibold text-[#112d58]">
               Browse jobs by category
@@ -20,7 +20,7 @@ function Jobs() {
             </p>
           </header>
 
-          <div class="flex flex-wrap flex-row -mx-4 text-center m-auto jobs">
+          <div class="flex flex-wrap flex-row  text-center m-auto jobs">
             <div
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"

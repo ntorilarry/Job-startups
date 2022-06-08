@@ -54,9 +54,9 @@ const Navbar = () => {
           {/* Hamburger menu */}
           <div onClick={handleNav} className="block md:hidden">
             {nav ? (
-              <AiOutlineClose size={30} className="text-white" />
+              <AiOutlineClose size={30} className="text-[#112d58]" />
             ) : (
-              <AiOutlineMenu size={30} className="text-white" />
+              <AiOutlineMenu size={30} className="text-[#112d58]" />
             )}
           </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "w-full bg-[#131311] text-white absolute top-[70px] left-0 flex justify-center text-center z-10"
+                ? "w-full bg-white text-black absolute top-[70px] left-0 flex justify-center text-center z-10"
                 : "absolute left-[-100%] z-10"
             }
           >
