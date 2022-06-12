@@ -135,6 +135,11 @@ function Jobs() {
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="4000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+              data-aos-once="true"
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"
               style={{
@@ -167,6 +172,11 @@ function Jobs() {
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="250"
+              data-aos-once="true"
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".1s"
@@ -200,6 +210,11 @@ function Jobs() {
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="6000"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+              data-aos-once="true"
               class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".3s"
